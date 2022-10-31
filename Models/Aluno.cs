@@ -10,9 +10,12 @@ namespace MVCAlunos.Models
     public class Aluno
     {
         [Key]
+
+        [Display(Name = "Id")]
         public int Matricula { get; set; }
-        public string? Nome { get; set; }
-        public string? Cpf { get; set; }
+
+        public string Nome { get; set; }
+        public string Cpf { get; set; }
 
 
         [DataType(DataType.Date)]
