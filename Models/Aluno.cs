@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations.Schema;
 namespace MVCAlunos.Models
 {
     public enum EnumeradorSexo
@@ -13,7 +13,6 @@ namespace MVCAlunos.Models
 
         [Display(Name = "Id")]
         public int Matricula { get; set; }
-
         public string Nome { get; set; }
         public string Cpf { get; set; }
 

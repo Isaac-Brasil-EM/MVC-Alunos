@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2yfYVoZ501HmFSwOIQPA0tSGpOoMcSfB79yAB4ytHCc=",
+  "Hash": "txBqnvY62nhf6x3/dJDrPpLwnxpRCTcP8fa6aB+VwWM=",
   "Source": "MVCAlunos",
   "BasePath": "_content/MVCAlunos",
   "Mode": "Default",
@@ -36854,6 +36854,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\MVCAlunos\\wwwroot\\mvcalunos.png",
+      "SourceId": "MVCAlunos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\MVCAlunos\\wwwroot\\",
+      "BasePath": "_content/MVCAlunos",
+      "RelativePath": "mvcalunos.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mvcalunos.png"
     }
   ]
 }

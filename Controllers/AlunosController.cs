@@ -20,9 +20,17 @@ namespace MVCAlunos.Controllers
         }
 
         // GET: Alunos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-              return View(await _context.Aluno.ToListAsync());
+            var alunos = from a in _context.Aluno
+                         select a;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                alunos = alunos.Where(s => s.Nome!.Contains(searchString));
+            }
+
+            return View(await alunos.ToListAsync());
         }
 
         // GET: Alunos/Details/5

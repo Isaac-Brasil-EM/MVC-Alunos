@@ -12,6 +12,12 @@
             Adicionar Aluno
         </button>
     </a>
+    <form asp-controller="Alunos" asp-action="Index">
+    <p>
+        Title: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 </p>
 <table class="table table-striped">
      <thead class="table-dark">
