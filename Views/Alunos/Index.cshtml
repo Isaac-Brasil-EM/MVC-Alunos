@@ -1,0 +1,72 @@
+﻿@model IEnumerable<MVCAlunos.Models.Aluno>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Matricula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpf)
+            </th>
+            <th>Opções</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Matricula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sexo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nascimento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpf)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Matricula" style="color: inherit; text-decoration: none;">
+                        <button type="button" class="btn btn-outline-primary" >
+                        <i class="bi bi-pencil-fill"></i>
+                        </button>
+                    </a>
+                    <a asp-action="Details" asp-route-id="@item.Matricula" style="color: inherit; text-decoration: none;" >
+                    <button type="button" class="btn btn-outline-primary" >
+                    <i class="bi bi-list"></i>
+                    </button>
+                    </a>
+                    <a asp-action="Edit" asp-route-id="@item.Matricula" style="color: inherit; text-decoration: none;">
+                        <button type="button" class="btn btn-outline-danger" >
+                        <i class="bi bi-trash-fill"></i>
+                        </button>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
