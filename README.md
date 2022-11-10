@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/Isaac-Brasil-EM/Escolar-manager?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Isaac-Brasil-EM/Escolar-manager?style=for-the-badge)
 
-<img src="mvcalunos.png" alt="exemplo imagem">
+<img src="wwwroot/mvcalunos.png" alt="exemplo imagem">
 
 > CRUD Web de Alunos.
 
