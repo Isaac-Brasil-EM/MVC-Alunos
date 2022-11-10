@@ -12,15 +12,22 @@
             Adicionar Aluno
         </button>
     </a>
-    <form asp-controller="Alunos" asp-action="Index">
-    <p>
-        Title: <input type="text" name="SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
-</form>
+    <form asp-controller="Alunos" asp-action="Index" method="get">
+        <div>
+            <input type="radio" id="nome" name="option" value="nome" checked>
+            <label for="nome">Nome</label>
+            <input type="radio" id="matricula" name="option" value="matricula">
+            <label for="matricula">Matrícula</label>
+        </div>
+        <div class="input-group mb-3" style="width: 20em;">
+            <input type="text" name="SearchString" placeholder="Insira nome/matricula"  class="form-control"/>
+            <input type="submit" value="Filter" class="btn btn-outline-secondary"/>
+        </div>
+    </form>
+
 </p>
 <table class="table table-striped">
-     <thead class="table-dark">
+    <thead class="table-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Matricula)

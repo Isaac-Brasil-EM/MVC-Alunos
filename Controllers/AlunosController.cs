@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -13,13 +14,17 @@ namespace MVCAlunos.Controllers
     public class AlunosController : Controller
     {
         private readonly MVCAlunosContext _context;
+        private readonly IHttpClientFactory _httpClientFactory;
 
-        public AlunosController(MVCAlunosContext context)
+        public AlunosController(MVCAlunosContext context, IHttpClientFactory httpClientFactory)
         {
             _context = context;
+            _httpClientFactory = httpClientFactory;
+
         }
 
         // GET: Alunos
+
         public async Task<IActionResult> Index(string searchString)
         {
             var alunos = from a in _context.Aluno
@@ -31,6 +36,12 @@ namespace MVCAlunos.Controllers
             }
 
             return View(await alunos.ToListAsync());
+        }
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
         }
 
         // GET: Alunos/Details/5

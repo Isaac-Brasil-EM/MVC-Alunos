@@ -13,6 +13,9 @@ namespace MVCAlunos.Models
 
         [Display(Name = "Id")]
         public int Matricula { get; set; }
+
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
         public string Nome { get; set; }
         public string Cpf { get; set; }
 
