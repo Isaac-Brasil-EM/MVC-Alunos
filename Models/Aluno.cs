@@ -24,6 +24,7 @@ namespace MVCAlunos.Models
 
         [DataType(DataType.Date)]
         public DateTime Nascimento { get; set; }
+
         public EnumeradorSexo? Sexo { get; set; }
     }
 }
