@@ -17,6 +17,8 @@ namespace MVCAlunos.Models
         [StringLength(60, MinimumLength = 3)]
         [Required]
         public string Nome { get; set; }
+
+        [StringLength(11, MinimumLength = 11, ErrorMessage = "O Campo CPF deve ter 11 dígitos. ")]
         public string Cpf { get; set; }
 
 
