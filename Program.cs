@@ -4,9 +4,9 @@ using MVCAlunos.Data;
 using MVCAlunos.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<MVCAlunosContext>(options =>
+/*builder.Services.AddDbContext<MVCAlunosContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MVCAlunosContext") ?? throw new InvalidOperationException("Connection string 'MVCAlunosContext' not found.")));
-
+*/
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
@@ -16,7 +16,7 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
 
-    SeedData.Initialize(services);
+    //SeedData.Initialize(services);
 }
 
 // Configure the HTTP request pipeline.

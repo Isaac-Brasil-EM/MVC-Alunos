@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NSmXRtlqvBwvA3VY5UmseGQqJKIiyDXIWbegeKT/UDpMYK0NIMd6EGyweHz1igOEvfXgwGAw46fzkpRaA4szXg==",
+  "dgSpecHash": "DgSf8eDlx8AEyR+Fq4dbRsVoV6ltDe1+UaZpFaO/72HRMHpQ9uzoWgXl+1V/shjH7zrZc7pt5/GuKFL3Ypl4lQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\MVCAlunos\\MVCAlunos.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\firebirdsql.data.firebirdclient\\9.1.0\\firebirdsql.data.firebirdclient.9.1.0.nupkg.sha512",
     "C:\\Users\\Escolar Manager\\.nuget\\packages\\font-awesome\\4.7.0\\font-awesome.4.7.0.nupkg.sha512",
     "C:\\Users\\Escolar Manager\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Escolar Manager\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -48,36 +48,41 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in ViewBag.Alunos)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Matricula)
+                    @*@Html.DisplayFor(modelItem => item.Matricula)*@
+                    @item.MATRICULA
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
+                    @*@Html.DisplayFor(modelItem => item.Nome)*@
+                    @item.NOME
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Sexo)
+                    @*@Html.DisplayFor(modelItem => item.Sexo)*@
+                    @item.SEXO
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Nascimento)
+                    @*@Html.DisplayFor(modelItem => item.Nascimento)*@
+                    @item.NASCIMENTO.ToString("dd/MM/yyyy")
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Cpf)
+                    @*@Html.DisplayFor(modelItem => item.Cpf)*@
+                    @item.CPF
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Matricula" style="color: inherit; text-decoration: none;">
+                    <a asp-action="Edit" asp-route-id="@item.MATRICULA" style="color: inherit; text-decoration: none;">
                         <button type="button" class="btn btn-outline-primary">
                             <i class="bi bi-pencil-fill"></i>
                         </button>
                     </a>
-                    <a asp-action="Details" asp-route-id="@item.Matricula" style="color: inherit; text-decoration: none;">
+                    <a asp-action="Details" asp-route-id="@item.MATRICULA" style="color: inherit; text-decoration: none;">
                         <button type="button" class="btn btn-outline-primary">
                             <i class="bi bi-list"></i>
                         </button>
                     </a>
-                    <a asp-action="Delete" asp-route-id="@item.Matricula" style="color: inherit; text-decoration: none;">
+                    <a asp-action="Delete" asp-route-id="@item.MATRICULA" style="color: inherit; text-decoration: none;">
                         <button type="button" class="btn btn-outline-danger">
                             <i class="bi bi-trash-fill"></i>
                         </button>

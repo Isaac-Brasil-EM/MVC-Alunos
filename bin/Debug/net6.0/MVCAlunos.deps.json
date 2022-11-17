@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "MVCAlunos/1.0.0": {
         "dependencies": {
+          "FirebirdSql.Data.FirebirdClient": "9.1.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
@@ -16,6 +17,14 @@
         },
         "runtime": {
           "MVCAlunos.dll": {}
+        }
+      },
+      "FirebirdSql.Data.FirebirdClient/9.1.0": {
+        "runtime": {
+          "lib/net6.0/FirebirdSql.Data.FirebirdClient.dll": {
+            "assemblyVersion": "9.1.0.0",
+            "fileVersion": "9.1.0.0"
+          }
         }
       },
       "font-awesome/4.7.0": {},
@@ -2232,6 +2241,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FirebirdSql.Data.FirebirdClient/9.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YyTgWTw0d9iNT9xSHynV4S415PwFMlk01PYDURIyzYu4mtGYKpneKjiy/eKiPmhQ61PG3MPO2zHdd+ti2TXm+A==",
+      "path": "firebirdsql.data.firebirdclient/9.1.0",
+      "hashPath": "firebirdsql.data.firebirdclient.9.1.0.nupkg.sha512"
     },
     "font-awesome/4.7.0": {
       "type": "package",

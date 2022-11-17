@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FirebirdSql.Data.FirebirdClient/9.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FirebirdSql.Data.FirebirdClient.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/FirebirdSql.Data.FirebirdClient.dll": {}
+        }
+      },
       "font-awesome/4.7.0": {
         "type": "package"
       },
@@ -3471,6 +3480,25 @@
     }
   },
   "libraries": {
+    "FirebirdSql.Data.FirebirdClient/9.1.0": {
+      "sha512": "YyTgWTw0d9iNT9xSHynV4S415PwFMlk01PYDURIyzYu4mtGYKpneKjiy/eKiPmhQ61PG3MPO2zHdd+ti2TXm+A==",
+      "type": "package",
+      "path": "firebirdsql.data.firebirdclient/9.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "firebird-logo.png",
+        "firebirdsql.data.firebirdclient.9.1.0.nupkg.sha512",
+        "firebirdsql.data.firebirdclient.nuspec",
+        "lib/net48/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net5.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/net6.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/netstandard2.0/FirebirdSql.Data.FirebirdClient.dll",
+        "lib/netstandard2.1/FirebirdSql.Data.FirebirdClient.dll",
+        "license.txt"
+      ]
+    },
     "font-awesome/4.7.0": {
       "sha512": "MCuSOl63d8b9Etn7Jm4FJS1lp8d8W9fGwQ6xu5SqrRu8e/p+FZv2a8W/LguziecV1ZpTqZPamG5nfmZs28SahA==",
       "type": "package",
@@ -9867,6 +9895,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FirebirdSql.Data.FirebirdClient >= 9.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
@@ -9918,6 +9947,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FirebirdSql.Data.FirebirdClient": {
+            "target": "Package",
+            "version": "[9.1.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -9962,7 +9995,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
